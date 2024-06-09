@@ -3,13 +3,13 @@ body{
 }
 *{
     color: snow;
-    background-color: #1B4D3E;
+
 }
 
 /* manera correcta de hacer un menu responsive <3 */
 .navbar {
     background-color: #1B4D3E; /* Color de fondo de la barra de navegación */
-    padding: 20px; /* Espacio de relleno interno de la barra de navegación */
+    padding: 10px; /* Espacio de relleno interno de la barra de navegación */
 }
 nav{
     position: fixed;
@@ -30,7 +30,7 @@ nav{
 }
 
 .navbar-nav .nav-item {
-    margin: 0; /* Espacio entre elementos del menú */
+    margin: 0px; /* Espacio entre elementos del menú */
 }
 
 .navbar-nav .nav-link {
@@ -49,6 +49,10 @@ nav{
 .nav-item{
     margin: 100px;
 }
+
+.navbar-toggler{
+    margin: 4px;
+}
 /* hasta aqui :* */
 
 h2,h4,h5{
@@ -62,73 +66,92 @@ h2,h4,h5{
     background: none;
 }
 
+.container{
+    margin: 10px;
+    margin-left: 100px;
+}
+
 .btn-1{
-    padding: 6px;
-    padding-block: 24px;
+    padding: 5px;
+    padding-block: 100px;
     color: azure;
     background-color: darkorange;
+    background-image: url(img/images\ \(1\).jpeg);
+    background-size: cover;
     text-decoration: none;
-    height: 80px;
-    width: 120px;
+    text-shadow: none;
+    height: 180px;
+    width: 180px;
     display: flex;
     text-align: center;
-    border-radius: 100%;
-    margin-left: 1px;
+    border-radius: 10%;
+    margin: 10px;
 }
+
 .btn-2{
-    padding: 8px;
-    padding-block: 16px;
+    padding: 5px;
+    padding-block: 100px;
     color: azure;
-    background-color: tomato;
+    background-color: gold;
+    background-image: url(img/images\(2\).jpeg);
+    background-size: cover;
     text-decoration: none;
-    height: 80px;
-    width: 120px;
+    text-shadow: none;
+    height: 180px;
+    width: 180px;
     display: flex;
     text-align: center;
-    border-radius: 100%;
-    margin-left: 1px;
+    border-radius: 10%;
+    margin: 10px;
+
 }
 .btn-3{
-    padding: 8px;
-    padding-block: 16px;
-    color: azure;
-    background-color: darksalmon;
-    text-decoration: none;
-    height: 80px;
-    width: 120px;
-    display: flex;
-    text-align: center;
-    border-radius: 100%;
-    margin-left: 1px;
-}
-.btn-4{
-    padding: 10px;
-    padding-block: 24px;
+    padding: 5px;
+    padding-block: 100px;
     color: azure;
     background-color: goldenrod;
+    background-image: url(img/images.jpeg);
+    background-size: cover;
     text-decoration: none;
     text-shadow: none;
-    height: 80px;
-    width: 120px;
+    height: 180px;
+    width: 180px;
     display: flex;
     text-align: center;
-    border-radius: 100%;
-    margin-left: 1px;
+    border-radius: 10%;
+    margin: 10px;
+
 }
-.btn-5{
-    padding: 18px;
-    padding-block: 24px;
+.btn-4{
+    padding: 6px;
+    padding-block: 100px;
     color: azure;
     background-color: thistle;
+    background-image: url(img/descarga.jpeg);
+    background-size: cover;
     text-decoration: none;
     text-shadow: none;
-    height: 80px;
-    width: 120px;
+    height: 180px;
+    width: 180px;
     display: flex;
     text-align: center;
-    border-radius: 100%;
-    margin-left: 1px;
+    border-radius: 10%;
+    margin: 10px;
 }
+
+.btn-1:hover{
+    filter: grayscale(40%);
+}
+.btn-2:hover{
+    filter: grayscale(40%);
+}
+.btn-3:hover{
+    filter: grayscale(40%);
+}
+.btn-4:hover{
+    filter: grayscale(40%);
+}
+
 
 .atras{
     margin-left: 100px;
@@ -169,11 +192,16 @@ footer .redes i{
 
 /* Autos disponibles */
 
-#container-productos {
-    height: 100px !important;
+.container-productos {
+    height: 100px;
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#container-productos{
+    margin-left: 70px !important;
 }
 
 .card-productos {
@@ -282,12 +310,15 @@ footer .redes i{
 /* Boton de redireccion */
 
 .button1{
-    margin-block-start: 180px;
     color: azure;
     text-decoration: none;
     text-shadow: none;
     display: flexbox;
     text-align: center;
+}
+
+.button1:hover{
+    color: #4CAF50;
 }
 
 .button2{
@@ -298,285 +329,91 @@ footer .redes i{
     text-align: center;
 }
 
-/*  */
-
-/* .contenedor {
-	width: 90%;
-	max-width: 1000px;
-	padding: 40px 20px;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-} */
-
-/* ---------- Estilos Generales de las Tarjetas ----------*/
-/* .tarjeta {
-	width: 100%;
-	max-width: 550px;
-	position: relative;
-	color: #fff;
-	transition: .3s ease all;
-	transform: rotateY(0deg);
-	transform-style: preserve-3d;
-	cursor: pointer;
-	z-index: 2;
+.button2:hover{
+    color: #4CAF50;
 }
 
-.tarjeta.active {
-	transform: rotateY(180deg);
+@media only screen and (min-width: 0px) {
+    *{
+        font-size: 12px;
+    }
+
 }
 
-.tarjeta > div {
-	padding: 30px;
-	border-radius: 15px;
-	min-height: 315px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3);
-} */
+@media only screen and (min-width: 350px) {
+    *{
+        font-size: 14px;
+    }
 
-/* ---------- Tarjeta Delantera ----------*/
-
-/* .tarjeta .delantera {
-	width: 100%;
-	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
-	background-size: cover;
 }
 
-.delantera .logo-marca {
-	text-align: right;
-	min-height: 50px;
+@media only screen and (min-width: 576px) {
+    .container{
+        margin: 10px;
+        margin-left: 40px;
+    }
+
+    #container-productos{
+        margin-left: 180px !important;
+    }
 }
 
-.delantera .logo-marca img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	max-width: 80px;
+@media only screen and (min-width: 768px) {
+
+    *{
+        font-size: 16px;
+    }
+
+    .container{
+        margin: 10px;
+        margin-left: 80px;
+    }
+
+    #container-productos{
+        margin-left: 280px !important;
+    }
 }
 
-.delantera .chip {
-	width: 100%;
-	max-width: 50px;
-	margin-bottom: 20px;
+@media only screen and (min-width: 992px) {
+    .container{
+        margin: 10px;
+        margin-left: 20px;
+    }
+
+    #container-productos{
+        margin-left: 380px !important;
+    }
 }
 
-.delantera .grupo .label {
-	font-size: 16px;
-	color: #7d8994;
-	margin-bottom: 5px;
+@media only screen and (min-width: 1084px) {
+    .container{
+        margin: 10px;
+        margin-left: 80px;
+    }
+
+    #container-productos{
+        margin-left: 460px !important;
+    }
 }
 
-.delantera .grupo .numero,
-.delantera .grupo .nombre,
-.delantera .grupo .expiracion {
-	color: #fff;
-	font-size: 22px;
-	text-transform: uppercase;
+@media only screen and (min-width: 1200px) {
+    .container{
+        margin: 10px;
+        margin-left: 80px;
+    }
+
+    #container-productos{
+        margin-left: 460px !important;
+    }
 }
 
-.delantera .flexbox {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 20px;
-} */
+@media only screen and (min-width: 1284px) {
+    .container{
+        margin: 10px;
+        margin-left: 100px;
+    }
 
-/* ---------- Tarjeta Trasera ----------*/
-/* .trasera {
-	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	transform: rotateY(180deg);
-	backface-visibility: hidden;
+    #container-productos{
+        margin-left: 580px !important;
+    }
 }
-
-.trasera .barra-magnetica {
-	height: 40px;
-	background: #000;
-	width: 100%;
-	position: absolute;
-	top: 30px;
-	left: 0;
-}
-
-.trasera .datos {
-	margin-top: 60px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.trasera .datos p {
-	margin-bottom: 5px;
-}
-
-.trasera .datos #firma {
-	width: 70%;
-}
-
-.trasera .datos #firma .firma {
-	height: 40px;
-	background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
-}
-
-.trasera .datos #firma .firma p {
-	line-height: 40px;
-	font-family: 'Liu Jian Mao Cao', cursive;
-	color: #000;
-	font-size: 30px;
-	padding: 0 10px;
-	text-transform: capitalize;
-}
-
-.trasera .datos #ccv {
-	width: 20%;
-}
-
-.trasera .datos #ccv .ccv {
-	background: #fff;
-	height: 40px;
-	color: #000;
-	padding: 10px;
-	text-align: center;
-}
-
-.trasera .leyenda {
-	font-size: 14px;
-	line-height: 24px;
-}
-
-.trasera .link-banco {
-	font-size: 14px;
-	color: #fff;
-} */
-
-/* ---------- Contenedor Boton ----------*/
-/* .contenedor-btn .btn-abrir-formulario {
-	width: 50px;
-	height: 50px;
-	font-size: 20px;
-	line-height: 20px;
-	background: #2364d2;
-	color: #fff;
-	position: relative;
-	top: -25px;
-	z-index: 3;
-	border-radius: 100%;
-	box-shadow: -5px 4px 8px rgba(24,56,182,0.4);
-	padding: 5px;
-	transition: all .2s ease;
-	border: none;
-	cursor: pointer;
-}
-
-.contenedor-btn .btn-abrir-formulario:hover {
-	background: #1850b1;
-}
-
-.contenedor-btn .btn-abrir-formulario.active {
-	transform: rotate(45deg);
-} */
-
-/* ---------- Formulario Tarjeta ----------*/
-/* .formulario-tarjeta {
-	background: #fff;
-	width: 100%;
-	max-width: 700px;
-	padding: 150px 30px 30px 30px;
-	border-radius: 10px;
-	position: relative;
-	top: -150px;
-	z-index: 1;
-	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-	transition: clip-path .3s ease-out;
-}
-
-.formulario-tarjeta.active {
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.formulario-tarjeta label {
-	display: block;
-	color: #7d8994;
-	margin-bottom: 5px;
-	font-size: 16px;
-}
-
-.formulario-tarjeta input,
-.formulario-tarjeta select,
-.btn-enviar {
-	border: 2px solid #CED6E0;
-	font-size: 18px;
-	height: 50px;
-	width: 100%;
-	padding: 5px 12px;
-	transition: .3s ease all;
-	border-radius: 5px;
-}
-
-.formulario-tarjeta input:hover,
-.formulario-tarjeta select:hover {
-	border: 2px solid #93BDED;
-}
-
-.formulario-tarjeta input:focus,
-.formulario-tarjeta select:focus {
-	outline: rgb(4,4,4);
-	box-shadow: 1px 7px 10px -5px rgba(90,116,148,0.3);
-}
-
-.formulario-tarjeta input {
-	margin-bottom: 20px;
-	text-transform: uppercase;
-}
-
-.formulario-tarjeta .flexbox {
-	display: flex;
-	justify-content: space-between;
-}
-
-.formulario-tarjeta .expira {
-	width: 100%;
-}
-
-.formulario-tarjeta .ccv {
-	min-width: 100px;
-}
-
-.formulario-tarjeta .grupo-select {
-	width: 100%;
-	margin-right: 15px;
-	position: relative;
-}
-
-.formulario-tarjeta select {
-	-webkit-appearance: none;
-}
-
-.formulario-tarjeta .grupo-select i {
-	position: absolute;
-	color: #CED6E0;
-	top: 18px;
-	right: 15px;
-	transition: .3s ease all;
-}
-
-.formulario-tarjeta .grupo-select:hover i {
-	color: #93bfed;
-}
-
-.formulario-tarjeta .btn-enviar {
-	border: none;
-	padding: 10px;
-	font-size: 22px;
-	color: #fff;
-	background: #2364d2;
-	box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
-	cursor: pointer;
-}
-
-.formulario-tarjeta .btn-enviar:hover {
-	background: #1850b1;
-} */

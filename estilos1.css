@@ -12,9 +12,8 @@ body {
 
 /* manera correcta de hacer un menu responsive <3 */
 .navbar {
-    /* background-color: #1B4D3E;  */
-    /* Color de fondo de la barra de navegación */
-    padding: 20px; /* Espacio de relleno interno de la barra de navegación */
+    background-color: #000; /* Color de fondo de la barra de navegación */
+    padding: 10px; /* Espacio de relleno interno de la barra de navegación */
 }
 nav{
     position: fixed;
@@ -35,7 +34,7 @@ nav{
 }
 
 .navbar-nav .nav-item {
-    margin: 0; /* Espacio entre elementos del menú */
+    margin: 0px; /* Espacio entre elementos del menú */
 }
 
 .navbar-nav .nav-link {
@@ -48,11 +47,16 @@ nav{
 }
 
 .navbar-toggler-icon {
-    border-color: #333333; /* Color del icono del botón desplegable */
+    border-color: azure; /* Color del icono del botón desplegable */
+	color: azure;
 }
 
 .nav-item{
     margin: 100px;
+}
+
+.navbar-toggler{
+    margin: 4px;
 }
 /* hasta aqui :* */
 
@@ -135,7 +139,7 @@ footer .redes i{
 
 .tarjeta .delantera {
 	width: 100%;
-	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
+	background: url(/img/bg-tarjeta-01.jpg);
 	background-size: cover;
 }
 
@@ -179,7 +183,7 @@ footer .redes i{
 
 /* ---------- Tarjeta Trasera ----------*/
 .trasera {
-	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
+	background: url(/img/bg-tarjeta-01.jpg);
 	background-size: cover;
 	position: absolute;
 	top: 0;
@@ -373,4 +377,9 @@ footer .redes i{
 
 .formulario-tarjeta .btn-enviar:hover {
 	background: #1850b1;
+}
+
+h2,h4,h5{
+    text-align: center;
+	color: azure;
 }
